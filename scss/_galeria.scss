@@ -1,0 +1,19 @@
+.galeria__container {
+  padding: 2rem 0;
+  text-align: center;
+  background: map-get($fondos, degrade1);
+  color: map-get($color-text, text-1);
+  text-shadow: map-get($sombras, sombraText-2);
+  .galeria__titulo {
+    padding: 1rem 0;
+  }
+  .galeria__box {
+    padding: 2rem;
+    .galeria__img {
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: map-get($sombras, sombraBox-2);
+    }
+  }
+}

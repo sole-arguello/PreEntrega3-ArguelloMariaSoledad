@@ -8,9 +8,248 @@
   font-family: "Monserrat";
 }
 
-/*@import "navbar";
-@import "home";
-@import "footer";
-@import "service";*/
+header {
+  top: 0;
+  z-index: 2;
+  position: sticky;
+  padding: 1.5%;
+  box-shadow: 2px 2px 5px black;
+  background: rgb(175, 95, 107);
+}
+header .container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header .container .conatiner__logo .logo {
+  width: 20%;
+  border-radius: 100%;
+}
+header .container .nav__container .nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+header .container .nav__container .nav__list .nav__items {
+  padding: 0.5rem;
+  list-style: none;
+}
+header .container .nav__container .nav__list .nav__items .nav__items--li {
+  text-decoration: none;
+  color: blanchedalmond;
+  text-shadow: 1px 1px 2px rgb(58, 56, 56);
+}
+header .container .nav__container .nav__list .nav__items .nav__items--li:hover {
+  color: rgb(104, 87, 66);
+}
+
+.main__index {
+  background: linear-gradient(to bottom, rgb(241, 235, 236), rgb(238, 173, 178));
+}
+.main__index .portada {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main__index .portada__titulo {
+  top: 70%;
+  width: 100%;
+  font-size: 3rem;
+  position: absolute;
+  text-align: center;
+  font-style: oblique;
+  font-family: "Monserrat";
+  color: rgb(97, 20, 45);
+  text-shadow: 1px 1px 2px rgb(233, 225, 225);
+}
+.main__index .portada__img {
+  width: 100%;
+  height: 300px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5019607843);
+}
+.main__index .service__container--index {
+  width: 100%;
+  padding: 5rem 0;
+}
+.main__index .service__container--index .service__card--index {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 0 0.8rem;
+  padding: 2rem 0.5rem;
+  border-radius: 10px;
+  color: rgb(131, 83, 98);
+  text-shadow: 1px 1px 2px rgb(58, 56, 56);
+  /*box-shadow: map-get($sombras, sombraBox-4);*/
+}
+.main__index .service__container--index .service__card--index .service__card--imgIndex {
+  width: 230px;
+  height: 230px;
+  margin: 0 0 1rem 0;
+  border-radius: 100%;
+  border: 10px solid rgb(209, 136, 148);
+}
+.main__index .service__container--index .service__card--index .service__card--lineIndex {
+  width: 20%;
+  border: 1px solid;
+  border-radius: 100%;
+  margin: 1rem 0 2rem 0;
+  color: rgb(131, 83, 98);
+}
+
+footer {
+  padding: 1rem 0;
+  text-align: center;
+  color: bisque;
+  background: rgb(175, 95, 107);
+  text-shadow: 1px 1px 2px black;
+  box-shadow: -2px -2px 5px black;
+}
+footer .footer__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+footer .footer__container .icono__redes {
+  padding-left: 1rem;
+  color: rgb(240, 189, 132);
+}
+footer .autor {
+  text-decoration: none;
+  color: rgb(240, 189, 132);
+}
+
+.main__service {
+  text-align: center;
+  padding: 0 0 5rem 0;
+  background: linear-gradient(to bottom, rgb(241, 235, 236), rgb(238, 173, 178));
+  background: linear-gradient(to bottom, rgb(241, 235, 236), rgb(238, 173, 178));
+}
+.main__service .service__titulo {
+  padding: 3% 0;
+  font-weight: 600;
+  font-size: 2.1rem;
+  color: rgb(97, 20, 45);
+  text-shadow: 1px 1px 2px black;
+}
+.main__service .service__container {
+  text-align: center;
+}
+.main__service .service__container .service__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
+  padding-top: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(175, 119, 128);
+  text-shadow: 1px 1px 2px black;
+}
+.main__service .service__container .service__card .service__card--img {
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+  border: 2px solid rgb(209, 136, 148);
+}
+.main__service .service__container .service__card .service__card--info {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main__service .service__container .service__card .service__card--info .service__card--name {
+  font-size: 1.5rem;
+}
+.main__service .service__container .service__card .service__card--info .service__card--line {
+  width: 20%;
+  margin: 2rem;
+  border: 1px solid;
+  border-radius: 100%;
+  color: rgb(131, 83, 98);
+}
+.main__service .service__container .service__card .service__card--info .service__card--description {
+  padding: 0 0.5rem;
+  text-align: left;
+}
+.main__service .service__container .box1 {
+  background: rgb(219, 200, 200);
+  border: 1px solid rgb(187, 185, 185);
+}
+.main__service .service__container .box2 {
+  background: rgb(219, 191, 191);
+  border: 1px solid rgb(168, 167, 167);
+}
+
+.nosotros__container {
+  padding: 2rem 0;
+  text-align: center;
+  background: linear-gradient(to bottom, rgb(236, 226, 228), rgb(238, 173, 178));
+}
+.nosotros__container .nosotros__team,
+.nosotros__container .nosotros__somos {
+  padding: 2% 10%;
+  /*seccion nosotros somos*/
+}
+.nosotros__container .nosotros__team .nosotros__team--titulo,
+.nosotros__container .nosotros__team .nosotros__somos--titulo,
+.nosotros__container .nosotros__somos .nosotros__team--titulo,
+.nosotros__container .nosotros__somos .nosotros__somos--titulo {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(97, 20, 45);
+  text-shadow: 1px 1px 2px rgb(58, 56, 56);
+}
+.nosotros__container .nosotros__team .nosotros__container--card,
+.nosotros__container .nosotros__somos .nosotros__container--card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.nosotros__container .nosotros__team .nosotros__container--card .nosotros__team--card,
+.nosotros__container .nosotros__somos .nosotros__container--card .nosotros__team--card {
+  width: 100%;
+  margin: 2rem;
+  padding: 15% 2% 10% 2%;
+  background: 1px solid rgb(223, 211, 211);
+  box-shadow: 10px 10px 10px -5px rgb(179, 179, 179);
+}
+.nosotros__container .nosotros__team .nosotros__container--card .nosotros__team--card .nosotros__img--team,
+.nosotros__container .nosotros__somos .nosotros__container--card .nosotros__team--card .nosotros__img--team {
+  width: 100%;
+  border: 1px solid rgb(223, 211, 211);
+}
+.nosotros__container .nosotros__team .nosotros__container--card .nosotros__team--card .nosotros__nombre--team,
+.nosotros__container .nosotros__somos .nosotros__container--card .nosotros__team--card .nosotros__nombre--team {
+  margin-top: 10%;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(117, 72, 72);
+  text-shadow: 1px 1px 2px rgb(66, 65, 65);
+}
+.nosotros__container .nosotros__team .nosotros__container--somos,
+.nosotros__container .nosotros__somos .nosotros__container--somos {
+  margin-bottom: 10%;
+}
+.nosotros__container .nosotros__team .nosotros__container--somos .nosotros__somos--titulo,
+.nosotros__container .nosotros__somos .nosotros__container--somos .nosotros__somos--titulo {
+  margin-bottom: 10%;
+}
+.nosotros__container .nosotros__team .nosotros__container--somos .nosotros__descripcion--somos,
+.nosotros__container .nosotros__somos .nosotros__container--somos .nosotros__descripcion--somos {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 3rem;
+}
+.nosotros__container .nosotros__team .nosotros__video--somos,
+.nosotros__container .nosotros__somos .nosotros__video--somos {
+  height: 250px;
+  border: 1px solid rgb(97, 20, 45);
+}
 
 /*# sourceMappingURL=style.css.map */

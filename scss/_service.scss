@@ -1,0 +1,58 @@
+.main__service {
+    text-align: center;
+    padding: 0 0 5rem 0;
+    background: map-get($fondos, degrade1);background: map-get($fondos, degrade1);
+    .service__titulo {
+      padding: 3% 0;
+      font-weight: 600;
+      font-size: 2.1rem;
+      color: map-get($color-text , text-1);
+      text-shadow: map-get($sombras, sombraBox-1);
+    }
+    .service__container {
+      text-align: center;
+      .service__card {
+        @include flex-col-center;
+        margin: 2rem;
+        padding-top: 2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        color: map-get($color-text , text-2);
+        text-shadow: map-get($sombras, sombraText-2);
+        .service__card--img {
+          width: 230px;
+          height: 230px;
+          border-radius: 100%;
+          border: map-get($bordes , borde-4);
+        }
+        .service__card--info {
+          padding: 1.5rem 0;
+          @include flex-col-center;
+          .service__card--name {
+            font-size: 1.5rem;
+          }
+          .service__card--line {
+            width: 20%;
+            margin: 2rem;
+            border: 1px solid;
+            border-radius: 100%;
+            color: map-get($color-text, text-8);
+          }
+          .service__card--description {
+            padding: 0 0.5rem;
+            text-align: left;
+          }
+        }
+      }
+      .box1 {
+        background: map-get($fondos, fondo-1);
+        border: map-get($bordes , borde-1 );
+      }
+      .box2 {
+        background: map-get($fondos, fondo-2);
+        border: map-get($bordes, borde-2);
+      }
+    }
+  }
+  

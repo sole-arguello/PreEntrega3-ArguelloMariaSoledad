@@ -20,11 +20,11 @@
         padding: 15% 2% 10% 2%;
         background: map-get($bordes, borde-5);
         box-shadow: map-get($sombras, sombraBox-4);
-        .nosotros__img--team {
+        .nosotros__team--img {
           width: 100%;
           border: map-get($bordes, borde-5);
         }
-        .nosotros__nombre--team {
+        .nosotros__team--nombre {
           margin-top: 10%;
           font-size: 2rem;
           font-weight: 500;

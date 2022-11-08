@@ -11,7 +11,8 @@
     @include flexDirection(column);
     .form__titulo {
       text-align: center;
-      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
     }
     .form__container {
       .contenido__form {
@@ -51,7 +52,7 @@
       .ubicacion__titulo {
         margin-bottom: 2rem;
         line-height: 1;
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 600;
         text-align: center;
       }

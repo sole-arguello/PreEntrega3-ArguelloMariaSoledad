@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,400;1,100;1,300&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Sans+Vai&family=Raleway:wght@400;500;600;700&display=swap");
 /* Monsetrrat - Grandstander - Noto Sans Vai - Raleway */
 * {
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -218,13 +218,13 @@ footer .autor {
   background: 1px solid rgb(223, 211, 211);
   box-shadow: 10px 10px 10px -5px rgb(179, 179, 179);
 }
-.nosotros__container .nosotros__team .nosotros__container--card .nosotros__team--card .nosotros__img--team,
-.nosotros__container .nosotros__somos .nosotros__container--card .nosotros__team--card .nosotros__img--team {
+.nosotros__container .nosotros__team .nosotros__container--card .nosotros__team--card .nosotros__team--img,
+.nosotros__container .nosotros__somos .nosotros__container--card .nosotros__team--card .nosotros__team--img {
   width: 100%;
   border: 1px solid rgb(223, 211, 211);
 }
-.nosotros__container .nosotros__team .nosotros__container--card .nosotros__team--card .nosotros__nombre--team,
-.nosotros__container .nosotros__somos .nosotros__container--card .nosotros__team--card .nosotros__nombre--team {
+.nosotros__container .nosotros__team .nosotros__container--card .nosotros__team--card .nosotros__team--nombre,
+.nosotros__container .nosotros__somos .nosotros__container--card .nosotros__team--card .nosotros__team--nombre {
   margin-top: 10%;
   font-size: 2rem;
   font-weight: 500;
@@ -288,7 +288,8 @@ footer .autor {
 }
 .Container__contacto .form__container .form__titulo {
   text-align: center;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 .Container__contacto .form__container .form__container .contenido__form {
   display: flex;
@@ -329,7 +330,7 @@ footer .autor {
 .Container__contacto .form__container .contenido__ubicacion .ubicacion__titulo {
   margin-bottom: 2rem;
   line-height: 1;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
 }
@@ -361,6 +362,225 @@ footer .autor {
   color: rgb(43, 41, 41);
   padding: 0 1rem;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .container .conatiner__logo {
+    width: 20%;
+  }
+  header .container .conatiner__logo .logo {
+    width: 50%;
+  }
+  header .container .nav__list .nav__items {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+  }
+  header .container .nav__list .nav__items .nav__items--li {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .main__index .portada .portada__titulo {
+    font-size: 5rem;
+  }
+  .main__index .service__container--index {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main__index .service__container--index .service__card--index {
+    margin: 1rem 0.5rem;
+  }
+  .main__index .service__container--index .service__card--index .service__card--imgIndex {
+    width: 200px;
+    height: 200px;
+  }
+  .main__service .service__titulo {
+    font-size: 3rem;
+  }
+  .main__service .service__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main__service .service__container .service__card {
+    width: 80%;
+    margin: 1rem 0.5rem;
+  }
+  .main__service .service__container .service__card .service__card--img {
+    width: 400px;
+    height: 400px;
+  }
+  .main__service .service__container .service__card .service__card--info .service__card--name {
+    font-size: 2rem;
+  }
+  .nosotros__container {
+    /*seccion nosotros somos*/
+  }
+  .nosotros__container .nosotros__team {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+  }
+  .nosotros__container .nosotros__team .nosotros__container--card {
+    display: flex;
+    flex-direction: row;
+  }
+  .nosotros__container .nosotros__team .nosotros__container--card .nosotros__team--card {
+    margin: 1rem;
+    padding: 8% 1% 5% 1%;
+  }
+  .nosotros__container .nosotros__somos {
+    padding: 5rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nosotros__container .nosotros__somos .nosotros__container--somos {
+    width: 50%;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros__container .nosotros__somos .nosotros__container--somos .nosotros__somos--titulo {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .nosotros__container .nosotros__somos .nosotros__container--somos .nosotros__descripcion--somos {
+    margin-top: 0;
+  }
+  .galeria__container .galeria__box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .galeria__container .galeria__box .galeria__img {
+    margin: 1rem;
+    flex: 1 1 25%;
+  }
+  .Container__contacto .form__container .form__titulo {
+    font-size: 3rem;
+  }
+  .Container__contacto .form__container .form__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .Container__contacto .form__container .form__container .contenido__form {
+    width: 50%;
+  }
+  .Container__contacto .form__container .form__container .contenido__ubicacion {
+    padding: 0 1rem;
+    line-height: 3;
+  }
+  .Container__contacto .form__container .form__container .contenido__ubicacion .ubicacion__titulo {
+    margin-bottom: 1.5rem;
+  }
+  .Container__contacto .preguntas__container .preguntas__titulo {
+    font-size: 2rem;
+  }
+  footer {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 1%;
+  }
+  header .container .conatiner__logo .logo {
+    width: 35%;
+  }
+  header .container .nav__list .nav__items {
+    padding: 0.5rem 1rem;
+  }
+  header .container .nav__list .nav__items .nav__items--li {
+    font-size: 1.5rem;
+  }
+  .main__index .portada .portada__img {
+    height: 600px;
+  }
+  .main__index .service__container--index .service__card--index {
+    max-width: 30%;
+    flex: 1 1 30%;
+  }
+  .main__index .service__container--index .service__card--index .service__card--imgIndex {
+    width: 200px;
+    height: 200px;
+  }
+  .main__service .service__container {
+    padding: 0 5rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main__service .service__container .service__card {
+    width: 35%;
+    margin: 0.5rem;
+  }
+  .main__service .service__container .service__card .service__card--img {
+    width: 250px;
+    height: 250px;
+    /*border: map-get($bordes , borde-3);*/
+  }
+  .main__service .service__container .service__card .service__card--info .service__card--name {
+    font-size: 1.5rem;
+  }
+  .nosotros__container .nosotros__somos {
+    margin: 0 2rem;
+  }
+  .nosotros__container .nosotros__somos .nosotros__conatiner--video {
+    width: 45%;
+  }
+  .Container__contacto .form__container .form__titulo {
+    font-size: 3.5rem;
+  }
+  .Container__contacto .form__container .form__container .contenido__ubicacion {
+    width: 50%;
+  }
+  footer .footer__container .icono__redes {
+    padding-left: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  header .container .nav__list .nav__items {
+    margin: 0 1.5rem;
+  }
+  header .container .nav__list .nav__items .nav__items--li {
+    font-size: 1.5rem;
+  }
+  .main__index .service__container--index .service__card--index {
+    max-width: 30%;
+    flex: 1 1 5%;
+  }
+  .main__index .service__container--index .service__card--index .service__card--imgIndex {
+    width: 230px;
+    height: 230px;
+  }
+  .nosotros__container .nosotros__somos {
+    margin: 0 2rem;
+  }
+  .nosotros__container .nosotros__somos .nosotros__container--somos .nosotros__descripcion--somos {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+  .nosotros__container .nosotros__somos .nosotros__conatiner--video {
+    width: 40%;
+  }
+  .nosotros__container .nosotros__somos .nosotros__conatiner--video .nosotros__video--somos {
+    height: 350px;
+  }
+  .galeria__container {
+    font-size: 1.5rem;
+  }
+  .galeria__container .galeria__box .galeria__img {
+    flex: 1 1 20%;
+  }
+  .Container__contacto {
+    padding: 2rem 5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

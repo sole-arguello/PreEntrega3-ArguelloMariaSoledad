@@ -1,0 +1,51 @@
+$hover-1: rgb(104, 87, 66);
+$img-fondo1: url(../assets/contacto/depositphotos_317114954-stock-photo-closeup-of-nails-in-uv.webp);
+
+$fondos: (
+  /*main*/ 
+  degrade1: linear-gradient(to bottom, rgb(241, 235, 236), rgb(238, 173, 178)),
+  degrade2: linear-gradient(to bottom, rgb(236, 226, 228), rgb(238, 173, 178)),
+  degrade3: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+  /*card*/ 
+  fondo-1: rgb(219, 200, 200),
+  fondo-2: rgb(219, 191, 191),
+  fondo-3: rgb(175, 95, 107),
+);
+
+$bordes:(
+  borde-1: 1px solid rgb(187, 185, 185),
+  borde-2: 1px solid rgb(168, 167, 167),
+  borde-3: 10px solid rgb(209, 136, 148),
+  borde-4: 2px solid rgb(209, 136, 148),
+  borde-5: 1px solid rgb(223, 211, 211),
+  borde-6: 1px solid rgb(97, 20, 45),
+  /*borde video*/
+  borde-7: 1px solid black,
+);
+
+$color-text: (
+  text-1: rgb(97, 20, 45),
+  text-2: rgb(175, 119, 128),
+  text-3: rgb(117, 72, 72),
+  text-4: blanchedalmond,
+  text-5: bisque,
+  text-6: rgb(240, 189, 132),
+  text-7: white,
+  text-8: rgb(131, 83, 98)
+  /*text-8: rgb(53, 52, 52),*/
+);
+
+$sombras: (
+  sombraText-1: 1px 1px 2px rgb(58, 56, 56),
+  sombraText-2: 1px 1px 2px black,
+  sombraText-3: 1px 1px 2px rgb(233, 225, 225),
+  sombraText-4: 1px 1px 2px rgb(66, 65, 65),
+
+  sombraBox-1: 1px 1px 2px black,
+  sombraBox-2: 0 0 16px #00000080,
+  sombraBox-3: -2px -2px 5px black,
+  sombraBox-4: 10px 10px 10px -5px rgb(179, 179, 179),
+  sombraBox-5: 2px 2px 5px black,
+  
+  /*sombraBox-6: 1px 1px 2px rgb(58, 56, 56),*/
+);

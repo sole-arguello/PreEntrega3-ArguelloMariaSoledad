@@ -1,0 +1,92 @@
+.Container__contacto {
+  padding: 2rem 0;
+  color: map-get($color-text, text-1);
+  text-shadow: map-get($sombras, sombraText-2);
+  background: map-get($fondos, degrade3), $img-fondo1;
+  background-size: cover;
+  background-position-y: 20%;
+  background-position-x: center;
+  background-position: center 20%;
+  .form__container {
+    @include flexDirection(column);
+    .form__titulo {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .form__container {
+      .contenido__form {
+        @include flex-col-center;
+        padding: 2rem 0;
+        margin: 0 1rem;
+        border-radius: 5%;
+        border: map-get($bordes, borde-6);
+        .form__label {
+          width: 75%;
+        }
+        .form__imput {
+          width: 75%;
+          margin-bottom: 1rem;
+        }
+        .form__text {
+          margin-top: 1rem;
+          max-width: 75%;
+          min-width: 75%;
+          min-height: 150px;
+          max-height: 200px;
+        }
+        .form__btn {
+          width: 30%;
+          padding: 0.5rem 0;
+          font-size: 1.2rem;
+          color: map-get($color-text, text-1);
+          border: map-get($bordes, borde-6);
+          border-radius: 5%;
+          margin-top: 1rem;
+        }
+      }
+    }
+    .contenido__ubicacion {
+      padding: 2.5rem 1rem 01rem;
+      line-height: 3;
+      .ubicacion__titulo {
+        margin-bottom: 2rem;
+        line-height: 1;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+      }
+      .ubicacion__domicilio,
+      .ubicacion__phone,
+      .ubicacion__mail,
+      .ubicacion__icono {
+        color: map-get($color-text, text-9);
+        margin-right: 1rem;
+      }
+      .ubicacion__icono {
+        font-size: 1.3rem;
+      }
+      .ubicacion__mapa {
+      }
+    }
+  }
+  .preguntas__container {
+    border: map-get($bordes, borde-6);
+    border-radius: 5%;
+    padding: 1rem;
+    margin: 0 1rem;
+    .preguntas__titulo {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .pregunta {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .respuesta {
+      color: map-get($color-text, text-10);
+      padding: 0 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+

@@ -252,4 +252,115 @@ footer .autor {
   border: 1px solid rgb(97, 20, 45);
 }
 
+.galeria__container {
+  padding: 2rem 0;
+  text-align: center;
+  background: linear-gradient(to bottom, rgb(241, 235, 236), rgb(238, 173, 178));
+  color: rgb(97, 20, 45);
+  text-shadow: 1px 1px 2px black;
+}
+.galeria__container .galeria__titulo {
+  padding: 1rem 0;
+}
+.galeria__container .galeria__box {
+  padding: 2rem;
+}
+.galeria__container .galeria__box .galeria__img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5019607843);
+}
+
+.Container__contacto {
+  padding: 2rem 0;
+  color: rgb(97, 20, 45);
+  text-shadow: 1px 1px 2px black;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../assets/contacto/depositphotos_317114954-stock-photo-closeup-of-nails-in-uv.webp);
+  background-size: cover;
+  background-position-y: 20%;
+  background-position-x: center;
+  background-position: center 20%;
+}
+.Container__contacto .form__container {
+  display: flex;
+  flex-direction: column;
+}
+.Container__contacto .form__container .form__titulo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.Container__contacto .form__container .form__container .contenido__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  margin: 0 1rem;
+  border-radius: 5%;
+  border: 1px solid rgb(97, 20, 45);
+}
+.Container__contacto .form__container .form__container .contenido__form .form__label {
+  width: 75%;
+}
+.Container__contacto .form__container .form__container .contenido__form .form__imput {
+  width: 75%;
+  margin-bottom: 1rem;
+}
+.Container__contacto .form__container .form__container .contenido__form .form__text {
+  margin-top: 1rem;
+  max-width: 75%;
+  min-width: 75%;
+  min-height: 150px;
+  max-height: 200px;
+}
+.Container__contacto .form__container .form__container .contenido__form .form__btn {
+  width: 30%;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  color: rgb(97, 20, 45);
+  border: 1px solid rgb(97, 20, 45);
+  border-radius: 5%;
+  margin-top: 1rem;
+}
+.Container__contacto .form__container .contenido__ubicacion {
+  padding: 2.5rem 1rem 1rem;
+  line-height: 3;
+}
+.Container__contacto .form__container .contenido__ubicacion .ubicacion__titulo {
+  margin-bottom: 2rem;
+  line-height: 1;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.Container__contacto .form__container .contenido__ubicacion .ubicacion__domicilio,
+.Container__contacto .form__container .contenido__ubicacion .ubicacion__phone,
+.Container__contacto .form__container .contenido__ubicacion .ubicacion__mail,
+.Container__contacto .form__container .contenido__ubicacion .ubicacion__icono {
+  color: black;
+  margin-right: 1rem;
+}
+.Container__contacto .form__container .contenido__ubicacion .ubicacion__icono {
+  font-size: 1.3rem;
+}
+.Container__contacto .preguntas__container {
+  border: 1px solid rgb(97, 20, 45);
+  border-radius: 5%;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+.Container__contacto .preguntas__container .preguntas__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.Container__contacto .preguntas__container .pregunta {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.Container__contacto .preguntas__container .respuesta {
+  color: rgb(43, 41, 41);
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */

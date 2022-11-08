@@ -8,19 +8,19 @@ header {
   .container {
     text-align: center;
     @include flex-col-center;
-    .conatiner__logo {
-      .logo {
+    &__logo {
+      &--img {
         width: 20%;
         border-radius: 100%;
       }
     }
-    .nav__container {
-      .nav__list {
+    .nav {
+      &__list {
         @include flex-content (space-around);
-        .nav__items {
+        &--items {
           padding: 0.5rem;
           list-style: none;
-          .nav__items--li {
+          &-li {
             text-decoration: none;
             color: map-get($color-text, text-4);
             text-shadow: map-get($sombras, sombraText-1);

@@ -22,24 +22,24 @@ header .container {
   align-items: center;
   flex-direction: column;
 }
-header .container .conatiner__logo .logo {
+header .container__logo--img {
   width: 20%;
   border-radius: 100%;
 }
-header .container .nav__container .nav__list {
+header .container .nav__list {
   display: flex;
   justify-content: space-around;
 }
-header .container .nav__container .nav__list .nav__items {
+header .container .nav__list--items {
   padding: 0.5rem;
   list-style: none;
 }
-header .container .nav__container .nav__list .nav__items .nav__items--li {
+header .container .nav__list--items-li {
   text-decoration: none;
   color: blanchedalmond;
   text-shadow: 1px 1px 2px rgb(58, 56, 56);
 }
-header .container .nav__container .nav__list .nav__items .nav__items--li:hover {
+header .container .nav__list--items-li:hover {
   color: rgb(104, 87, 66);
 }
 
@@ -369,17 +369,19 @@ footer .autor {
     flex-direction: row;
     justify-content: space-between;
   }
-  header .container .conatiner__logo {
-    width: 20%;
+  header .container__logo {
+    width: 100%;
+    text-align: left;
+    padding-left: 1rem;
   }
-  header .container .conatiner__logo .logo {
+  header .container__logo--img {
     width: 50%;
   }
-  header .container .nav__list .nav__items {
+  header .container .nav__list--items {
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
   }
-  header .container .nav__list .nav__items .nav__items--li {
+  header .container .nav__list--items-li {
     font-size: 1.2rem;
     font-weight: 600;
   }
@@ -491,13 +493,13 @@ footer .autor {
   header {
     padding: 1%;
   }
-  header .container .conatiner__logo .logo {
-    width: 35%;
+  header .container__logo--img {
+    width: 30%;
   }
-  header .container .nav__list .nav__items {
+  header .container .nav__list--items {
     padding: 0.5rem 1rem;
   }
-  header .container .nav__list .nav__items .nav__items--li {
+  header .container .nav__list--items-li {
     font-size: 1.5rem;
   }
   .main__index .portada .portada__img {
@@ -545,10 +547,13 @@ footer .autor {
   }
 }
 @media (min-width: 1200px) {
-  header .container .nav__list .nav__items {
+  header .container__logo--img {
+    width: 20%;
+  }
+  header .container .nav__list--items {
     margin: 0 1.5rem;
   }
-  header .container .nav__list .nav__items .nav__items--li {
+  header .container .nav__list--items-li {
     font-size: 1.5rem;
   }
   .main__index .service__container--index .service__card--index {

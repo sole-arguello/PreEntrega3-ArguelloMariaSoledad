@@ -1,0 +1,35 @@
+header {
+  top: 0;
+  z-index: 2;
+  position: sticky;
+  padding: 1.5%;
+  box-shadow: map-get($sombras, sombraBox-5);
+  background: map-get($fondos, fondo-3);
+  .container {
+    text-align: center;
+    @include flex-col-center;
+    .conatiner__logo {
+      .logo {
+        width: 20%;
+        border-radius: 100%;
+      }
+    }
+    .nav__container {
+      .nav__list {
+        @include flex-content (space-around);
+        .nav__items {
+          padding: 0.5rem;
+          list-style: none;
+          .nav__items--li {
+            text-decoration: none;
+            color: map-get($color-text, text-4);
+            text-shadow: map-get($sombras, sombraText-1);
+            &:hover {
+              color: $hover-1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.main__index {
+    background: map-get($fondos, degrade1);
+    .portada {
+      position: relative;
+      @include flex(column, center);
+      &__titulo {
+        top: 70%;
+        width: 100%;
+        font-size: 3rem;
+        position: absolute;
+        text-align: center;
+        font-style: oblique;
+        font-family: $font-1;
+        color: map-get($color-text, text-1);
+        text-shadow: map-get($sombras, sombraText-3);
+      }
+      &__img {
+        width: 100%;
+        height: 300px;
+        box-shadow: map-get($sombras, sombraBox-2);
+      }
+    }
+    .service__container--index {
+      width: 100%;
+      padding: 5rem 0;
+      .service__card--index {
+        @include flex-col-center;
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin: 0 0.8rem;
+        padding: 2rem 0.5rem;
+        border-radius: 10px;
+        color: map-get($color-text, text-8);
+        text-shadow: map-get($sombras, sombraText-1);
+        /*box-shadow: map-get($sombras, sombraBox-4);*/
+        .service__card--imgIndex {
+          width: 230px;
+          height: 230px;
+          margin: 0 0 1rem 0;
+          border-radius: 100%;
+          border: map-get($bordes , borde-3);
+        }
+        .service__card--lineIndex {
+          width: 20%;
+          border: 1px solid;
+          border-radius: 100%;
+          margin: 1rem 0 2rem 0;
+          color: map-get($color-text, text-8);
+        }
+      }
+    }
+  }

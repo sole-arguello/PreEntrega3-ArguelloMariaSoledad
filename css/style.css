@@ -68,11 +68,11 @@ header .container .nav__list--items-li:hover {
   height: 300px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5019607843);
 }
-.main__index .service__container--index {
+.main__index .home {
   width: 100%;
   padding: 5rem 0;
 }
-.main__index .service__container--index .service__card--index {
+.main__index .home__card {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -85,14 +85,14 @@ header .container .nav__list--items-li:hover {
   text-shadow: 1px 1px 2px rgb(58, 56, 56);
   /*box-shadow: map-get($sombras, sombraBox-4);*/
 }
-.main__index .service__container--index .service__card--index .service__card--imgIndex {
+.main__index .home__card--img {
   width: 230px;
   height: 230px;
   margin: 0 0 1rem 0;
   border-radius: 100%;
   border: 10px solid rgb(209, 136, 148);
 }
-.main__index .service__container--index .service__card--index .service__card--lineIndex {
+.main__index .home__card--line {
   width: 20%;
   border: 1px solid;
   border-radius: 100%;
@@ -113,7 +113,7 @@ footer .footer__container {
   justify-content: center;
   margin-bottom: 1rem;
 }
-footer .footer__container .icono__redes {
+footer .footer__container--redes {
   padding-left: 1rem;
   color: rgb(240, 189, 132);
 }
@@ -122,23 +122,23 @@ footer .autor {
   color: rgb(240, 189, 132);
 }
 
-.main__service {
+.service {
   text-align: center;
   padding: 0 0 5rem 0;
   background: linear-gradient(to bottom, rgb(241, 235, 236), rgb(238, 173, 178));
   background: linear-gradient(to bottom, rgb(241, 235, 236), rgb(238, 173, 178));
 }
-.main__service .service__titulo {
+.service__titulo {
   padding: 3% 0;
   font-weight: 600;
   font-size: 2.1rem;
   color: rgb(97, 20, 45);
   text-shadow: 1px 1px 2px black;
 }
-.main__service .service__container {
+.service__container {
   text-align: center;
 }
-.main__service .service__container .service__card {
+.service__container--card {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -150,129 +150,123 @@ footer .autor {
   color: rgb(175, 119, 128);
   text-shadow: 1px 1px 2px black;
 }
-.main__service .service__container .service__card .service__card--img {
+.service__container--card-img {
   width: 230px;
   height: 230px;
   border-radius: 100%;
   border: 2px solid rgb(209, 136, 148);
 }
-.main__service .service__container .service__card .service__card--info {
+.service__container--card-info {
   padding: 1.5rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.main__service .service__container .service__card .service__card--info .service__card--name {
+.service__container--card-info .service__card--name {
   font-size: 1.5rem;
 }
-.main__service .service__container .service__card .service__card--info .service__card--line {
+.service__container--card-info .service__card--line {
   width: 20%;
   margin: 2rem;
   border: 1px solid;
   border-radius: 100%;
   color: rgb(131, 83, 98);
 }
-.main__service .service__container .service__card .service__card--info .service__card--description {
+.service__container--card-info .service__card--description {
   padding: 0 0.5rem;
   text-align: left;
 }
-.main__service .service__container .box1 {
+.service__container .box1 {
   background: rgb(219, 200, 200);
   border: 1px solid rgb(187, 185, 185);
 }
-.main__service .service__container .box2 {
+.service__container .box2 {
   background: rgb(219, 191, 191);
   border: 1px solid rgb(168, 167, 167);
 }
 
-.nosotros__container {
+.nosotros {
   padding: 2rem 0;
   text-align: center;
   background: linear-gradient(to bottom, rgb(236, 226, 228), rgb(238, 173, 178));
-}
-.nosotros__container .nosotros__team,
-.nosotros__container .nosotros__somos {
-  padding: 2% 10%;
   /*seccion nosotros somos*/
 }
-.nosotros__container .nosotros__team .nosotros__team--titulo,
-.nosotros__container .nosotros__team .nosotros__somos--titulo,
-.nosotros__container .nosotros__somos .nosotros__team--titulo,
-.nosotros__container .nosotros__somos .nosotros__somos--titulo {
+.nosotros .team {
+  padding: 2% 10%;
+}
+.nosotros .team__titulo {
   font-size: 3rem;
   font-weight: 600;
   color: rgb(97, 20, 45);
   text-shadow: 1px 1px 2px rgb(58, 56, 56);
 }
-.nosotros__container .nosotros__team .nosotros__container--card,
-.nosotros__container .nosotros__somos .nosotros__container--card {
+.nosotros .team__cards {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.nosotros__container .nosotros__team .nosotros__container--card .nosotros__team--card,
-.nosotros__container .nosotros__somos .nosotros__container--card .nosotros__team--card {
+.nosotros .team__cards .team__card {
   width: 100%;
   margin: 2rem;
   padding: 15% 2% 10% 2%;
   background: 1px solid rgb(223, 211, 211);
   box-shadow: 10px 10px 10px -5px rgb(179, 179, 179);
 }
-.nosotros__container .nosotros__team .nosotros__container--card .nosotros__team--card .nosotros__team--img,
-.nosotros__container .nosotros__somos .nosotros__container--card .nosotros__team--card .nosotros__team--img {
+.nosotros .team__cards .team__card--img {
   width: 100%;
   border: 1px solid rgb(223, 211, 211);
 }
-.nosotros__container .nosotros__team .nosotros__container--card .nosotros__team--card .nosotros__team--nombre,
-.nosotros__container .nosotros__somos .nosotros__container--card .nosotros__team--card .nosotros__team--nombre {
+.nosotros .team__cards .team__card--nombre {
   margin-top: 10%;
   font-size: 2rem;
   font-weight: 500;
   color: rgb(117, 72, 72);
   text-shadow: 1px 1px 2px rgb(66, 65, 65);
 }
-.nosotros__container .nosotros__team .nosotros__container--somos,
-.nosotros__container .nosotros__somos .nosotros__container--somos {
+.nosotros .somos {
+  padding: 2% 10%;
   margin-bottom: 10%;
 }
-.nosotros__container .nosotros__team .nosotros__container--somos .nosotros__somos--titulo,
-.nosotros__container .nosotros__somos .nosotros__container--somos .nosotros__somos--titulo {
+.nosotros .somos__container--info-titulo {
+  font-size: 3rem;
+  font-weight: 600;
   margin-bottom: 10%;
+  color: rgb(97, 20, 45);
+  text-shadow: 1px 1px 2px rgb(58, 56, 56);
 }
-.nosotros__container .nosotros__team .nosotros__container--somos .nosotros__descripcion--somos,
-.nosotros__container .nosotros__somos .nosotros__container--somos .nosotros__descripcion--somos {
+.nosotros .somos__container--info-descripcion {
   font-size: 1rem;
   line-height: 1.5;
   text-align: left;
   margin-top: 3rem;
 }
-.nosotros__container .nosotros__team .nosotros__video--somos,
-.nosotros__container .nosotros__somos .nosotros__video--somos {
+.nosotros .somos__container--video-iframe {
   height: 250px;
+  margin-top: 2rem;
   border: 1px solid rgb(97, 20, 45);
 }
 
-.galeria__container {
+.galeria {
   padding: 2rem 0;
   text-align: center;
   background: linear-gradient(to bottom, rgb(241, 235, 236), rgb(238, 173, 178));
   color: rgb(97, 20, 45);
   text-shadow: 1px 1px 2px black;
 }
-.galeria__container .galeria__titulo {
+.galeria__titulo {
   padding: 1rem 0;
 }
-.galeria__container .galeria__box {
+.galeria__box {
   padding: 2rem;
 }
-.galeria__container .galeria__box .galeria__img {
+.galeria__box--img {
   width: 100%;
   margin-bottom: 20px;
   border-radius: 15px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5019607843);
 }
 
-.Container__contacto {
+.contacto {
   padding: 2rem 0;
   color: rgb(97, 20, 45);
   text-shadow: 1px 1px 2px black;
@@ -282,16 +276,16 @@ footer .autor {
   background-position-x: center;
   background-position: center 20%;
 }
-.Container__contacto .form__container {
+.contacto .form {
   display: flex;
   flex-direction: column;
 }
-.Container__contacto .form__container .form__titulo {
+.contacto .form__titulo {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
-.Container__contacto .form__container .form__container .contenido__form {
+.contacto .form__container--info {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -300,21 +294,21 @@ footer .autor {
   border-radius: 5%;
   border: 1px solid rgb(97, 20, 45);
 }
-.Container__contacto .form__container .form__container .contenido__form .form__label {
+.contacto .form__container--info-label {
   width: 75%;
 }
-.Container__contacto .form__container .form__container .contenido__form .form__imput {
+.contacto .form__container--info-imput {
   width: 75%;
   margin-bottom: 1rem;
 }
-.Container__contacto .form__container .form__container .contenido__form .form__text {
+.contacto .form__container--info-textarea {
   margin-top: 1rem;
   max-width: 75%;
   min-width: 75%;
   min-height: 150px;
   max-height: 200px;
 }
-.Container__contacto .form__container .form__container .contenido__form .form__btn {
+.contacto .form__container--info-btn {
   width: 30%;
   padding: 0.5rem 0;
   font-size: 1.2rem;
@@ -323,42 +317,39 @@ footer .autor {
   border-radius: 5%;
   margin-top: 1rem;
 }
-.Container__contacto .form__container .contenido__ubicacion {
+.contacto .form__container--ubicacion {
   padding: 2.5rem 1rem 1rem;
   line-height: 3;
 }
-.Container__contacto .form__container .contenido__ubicacion .ubicacion__titulo {
+.contacto .form__container--ubicacion-titulo {
   margin-bottom: 2rem;
   line-height: 1;
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
 }
-.Container__contacto .form__container .contenido__ubicacion .ubicacion__domicilio,
-.Container__contacto .form__container .contenido__ubicacion .ubicacion__phone,
-.Container__contacto .form__container .contenido__ubicacion .ubicacion__mail,
-.Container__contacto .form__container .contenido__ubicacion .ubicacion__icono {
+.contacto .form__container--ubicacion-domicilio, .contacto .form__container--ubicacion-phone, .contacto .form__container--ubicacion-mail {
   color: black;
-  margin-right: 1rem;
 }
-.Container__contacto .form__container .contenido__ubicacion .ubicacion__icono {
+.contacto .form__container--ubicacion .icono {
+  margin-right: 1rem;
   font-size: 1.3rem;
 }
-.Container__contacto .preguntas__container {
+.contacto .preguntas {
   border: 1px solid rgb(97, 20, 45);
   border-radius: 5%;
   padding: 1rem;
   margin: 0 1rem;
 }
-.Container__contacto .preguntas__container .preguntas__titulo {
+.contacto .preguntas__titulo {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-.Container__contacto .preguntas__container .pregunta {
+.contacto .preguntas__pregunta {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
-.Container__contacto .preguntas__container .respuesta {
+.contacto .preguntas__respuesta {
   color: rgb(43, 41, 41);
   padding: 0 1rem;
   margin-bottom: 1rem;
@@ -385,103 +376,103 @@ footer .autor {
     font-size: 1.2rem;
     font-weight: 600;
   }
-  .main__index .portada .portada__titulo {
+  .home__container .portada .portada__titulo {
     font-size: 5rem;
   }
-  .main__index .service__container--index {
+  .home__container .home {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
-  .main__index .service__container--index .service__card--index {
+  .home__container .home__card {
     margin: 1rem 0.5rem;
   }
-  .main__index .service__container--index .service__card--index .service__card--imgIndex {
+  .home__container .home__card--img {
     width: 200px;
     height: 200px;
   }
-  .main__service .service__titulo {
+  .service__titulo {
     font-size: 3rem;
   }
-  .main__service .service__container {
+  .service__container {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .main__service .service__container .service__card {
+  .service__container--card {
     width: 80%;
     margin: 1rem 0.5rem;
   }
-  .main__service .service__container .service__card .service__card--img {
+  .service__container--card-img {
     width: 400px;
     height: 400px;
   }
-  .main__service .service__container .service__card .service__card--info .service__card--name {
+  .service__container--card-info .service__card--name {
     font-size: 2rem;
   }
-  .nosotros__container {
+  .nosotros {
     /*seccion nosotros somos*/
   }
-  .nosotros__container .nosotros__team {
+  .nosotros .team {
     display: flex;
     flex-direction: column;
     padding: 2%;
   }
-  .nosotros__container .nosotros__team .nosotros__container--card {
+  .nosotros .team__cards {
     display: flex;
     flex-direction: row;
   }
-  .nosotros__container .nosotros__team .nosotros__container--card .nosotros__team--card {
-    margin: 1rem;
+  .nosotros .team__cards .team__card {
+    margin: 1rem 0.5rem;
     padding: 8% 1% 5% 1%;
   }
-  .nosotros__container .nosotros__somos {
+  .nosotros .somos {
     padding: 5rem 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .nosotros__container .nosotros__somos .nosotros__container--somos {
+  .nosotros .somos__container--info {
     width: 50%;
     margin-right: 2rem;
     display: flex;
     flex-direction: column;
   }
-  .nosotros__container .nosotros__somos .nosotros__container--somos .nosotros__somos--titulo {
+  .nosotros .somos__container--info-titulo {
     text-align: left;
     margin-bottom: 2rem;
   }
-  .nosotros__container .nosotros__somos .nosotros__container--somos .nosotros__descripcion--somos {
+  .nosotros .somos__container--info-descripcion {
     margin-top: 0;
   }
-  .galeria__container .galeria__box {
+  .galeria__box {
     display: flex;
     flex-wrap: wrap;
   }
-  .galeria__container .galeria__box .galeria__img {
+  .galeria__box--img {
     margin: 1rem;
     flex: 1 1 25%;
   }
-  .Container__contacto .form__container .form__titulo {
+  .contacto .form__titulo {
     font-size: 3rem;
   }
-  .Container__contacto .form__container .form__container {
+  .contacto .form__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 2rem;
   }
-  .Container__contacto .form__container .form__container .contenido__form {
+  .contacto .form__container--info {
     width: 50%;
   }
-  .Container__contacto .form__container .form__container .contenido__ubicacion {
+  .contacto .form__container--ubicacion {
     padding: 0 1rem;
     line-height: 3;
   }
-  .Container__contacto .form__container .form__container .contenido__ubicacion .ubicacion__titulo {
+  .contacto .form__container--ubicacion-titulo {
     margin-bottom: 1.5rem;
   }
-  .Container__contacto .preguntas__container .preguntas__titulo {
+  .contacto .preguntas__titulo {
     font-size: 2rem;
   }
   footer {
@@ -502,47 +493,47 @@ footer .autor {
   header .container .nav__list--items-li {
     font-size: 1.5rem;
   }
-  .main__index .portada .portada__img {
+  .home__container .portada .portada__img {
     height: 600px;
   }
-  .main__index .service__container--index .service__card--index {
+  .home__container .home__card {
     max-width: 30%;
     flex: 1 1 30%;
   }
-  .main__index .service__container--index .service__card--index .service__card--imgIndex {
+  .home__container .home__card--img {
     width: 200px;
     height: 200px;
   }
-  .main__service .service__container {
+  .service__container {
     padding: 0 5rem;
     flex-direction: row;
     justify-content: center;
   }
-  .main__service .service__container .service__card {
+  .service__container--card {
     width: 35%;
     margin: 0.5rem;
   }
-  .main__service .service__container .service__card .service__card--img {
+  .service__container--card-img {
     width: 250px;
     height: 250px;
     /*border: map-get($bordes , borde-3);*/
   }
-  .main__service .service__container .service__card .service__card--info .service__card--name {
+  .service__container--card-info .service__card--name {
     font-size: 1.5rem;
   }
-  .nosotros__container .nosotros__somos {
+  .nosotros .somos {
     margin: 0 2rem;
   }
-  .nosotros__container .nosotros__somos .nosotros__conatiner--video {
+  .nosotros .somos__container--video {
     width: 45%;
   }
-  .Container__contacto .form__container .form__titulo {
+  .contacto .form__titulo {
     font-size: 3.5rem;
   }
-  .Container__contacto .form__container .form__container .contenido__ubicacion {
+  .contacto .form__container .contenido__ubicacion {
     width: 50%;
   }
-  footer .footer__container .icono__redes {
+  footer .footer__container--redes {
     padding-left: 2rem;
   }
 }
@@ -556,34 +547,29 @@ footer .autor {
   header .container .nav__list--items-li {
     font-size: 1.5rem;
   }
-  .main__index .service__container--index .service__card--index {
+  .home__container .home__card {
     max-width: 30%;
     flex: 1 1 5%;
   }
-  .main__index .service__container--index .service__card--index .service__card--imgIndex {
+  .home__container .home__card--img {
     width: 230px;
     height: 230px;
   }
-  .nosotros__container .nosotros__somos {
-    margin: 0 2rem;
-  }
-  .nosotros__container .nosotros__somos .nosotros__container--somos .nosotros__descripcion--somos {
+  .nosotros .somos__container--info-descripcion {
     font-size: 1.2rem;
     line-height: 2;
   }
-  .nosotros__container .nosotros__somos .nosotros__conatiner--video {
-    width: 40%;
+  .nosotros .somos__container--video-iframe {
+    width: 130%;
+    height: 300px;
   }
-  .nosotros__container .nosotros__somos .nosotros__conatiner--video .nosotros__video--somos {
-    height: 350px;
-  }
-  .galeria__container {
+  .galeria {
     font-size: 1.5rem;
   }
-  .galeria__container .galeria__box .galeria__img {
+  .galeria__box--img {
     flex: 1 1 20%;
   }
-  .Container__contacto {
+  .contacto {
     padding: 2rem 5rem;
   }
 }

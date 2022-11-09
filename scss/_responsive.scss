@@ -10,7 +10,7 @@
           width: 50%;
         }
       }
-      .nav{
+      .nav {
         &__list {
           &--items {
             padding: 0.5rem 1rem;
@@ -24,37 +24,37 @@
       }
     }
   }
-  .main__index {
+  .home__container {
     .portada {
       .portada__titulo {
         font-size: 5rem;
       }
     }
-    .service__container--index {
+    .home {
       @include flex-center(wrap);
-      .service__card--index {
+      &__card {
         margin: 1rem 0.5rem;
-        .service__card--imgIndex {
+        &--img {
           width: 200px;
           height: 200px;
         }
       }
     }
   }
-  .main__service {
-    .service__titulo {
+  .service {
+    &__titulo {
       font-size: 3rem;
     }
-    .service__container {
+    &__container {
       @include flex-col-center;
-      .service__card {
+      &--card {
         width: 80%;
         margin: 1rem 0.5rem;
-        .service__card--img {
+        &-img {
           width: 400px;
           height: 400px;
         }
-        .service__card--info {
+        &-info {
           .service__card--name {
             font-size: 2rem;
           }
@@ -62,68 +62,68 @@
       }
     }
   }
-  .nosotros__container {
-    .nosotros__team {
+  .nosotros {
+    .team {
       @include flexDirection(column);
       padding: 2%;
-      .nosotros__container--card {
+      &__cards {
         @include flexDirection(row);
-        .nosotros__team--card {
-          margin: 1rem;
+        .team__card {
+          margin: 1rem 0.5rem;
           padding: 8% 1% 5% 1%;
         }
       }
     }
     /*seccion nosotros somos*/
-    .nosotros__somos {
+    .somos {
       padding: 5rem 0 0 0;
       @include flex-alingItems-justify;
-      .nosotros__container--somos {
+      &__container--info {
         width: 50%;
         margin-right: 2rem;
         @include flexDirection(column);
-        .nosotros__somos--titulo {
+        &-titulo {
           text-align: left;
           margin-bottom: 2rem;
         }
-        .nosotros__descripcion--somos {
+        &-descripcion {
           margin-top: 0;
         }
       }
     }
   }
-  .galeria__container {
-    .galeria__box {
+  .galeria {
+    &__box {
       display: flex;
       flex-wrap: wrap;
-      .galeria__img {
+      &--img {
         margin: 1rem;
         flex: 1 1 25%;
       }
     }
   }
-  .Container__contacto {
-    .form__container {
-      .form__titulo {
+  .contacto {
+    .form {
+      &__titulo {
         font-size: 3rem;
       }
-      .form__container {
+      &__container {
         @include flex(row, center);
         margin-bottom: 2rem;
-        .contenido__form {
+        &--info {
           width: 50%;
         }
-        .contenido__ubicacion {
+        &--ubicacion {
           padding: 0 1rem;
           line-height: 3;
-          .ubicacion__titulo {
+          &-titulo {
             margin-bottom: 1.5rem;
           }
         }
       }
     }
-    .preguntas__container {
-      .preguntas__titulo {
+    .preguntas {
+      &__titulo {
         font-size: 2rem;
       }
     }
@@ -134,7 +134,7 @@
   }
 }
 
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
   header {
     padding: 1%;
     .container {
@@ -143,11 +143,11 @@
           width: 30%;
         }
       }
-      .nav{
+      .nav {
         &__list {
           &--items {
             padding: 0.5rem 1rem;
-  
+
             &-li {
               font-size: 1.5rem;
             }
@@ -156,36 +156,36 @@
       }
     }
   }
-  .main__index {
+  .home__container {
     .portada {
       .portada__img {
         height: 600px;
       }
     }
-    .service__container--index {
-      .service__card--index {
+    .home {
+      &__card {
         max-width: 30%;
         flex: 1 1 30%;
-        .service__card--imgIndex {
+        &--img {
           width: 200px;
           height: 200px;
         }
       }
     }
   }
-  .main__service {
-    .service__container {
+  .service {
+    &__container {
       padding: 0 5rem;
       @include flexDirectionJustify(row, center);
-      .service__card {
+      &--card {
         width: 35%;
         margin: 0.5rem;
-        .service__card--img {
+        &-img {
           width: 250px;
           height: 250px;
           /*border: map-get($bordes , borde-3);*/
         }
-        .service__card--info {
+        &-info {
           .service__card--name {
             font-size: 1.5rem;
           }
@@ -193,20 +193,20 @@
       }
     }
   }
-  .nosotros__container {
-    .nosotros__somos {
+  .nosotros {
+    .somos {
       margin: 0 2rem;
-      .nosotros__conatiner--video {
+      &__container--video {
         width: 45%;
       }
     }
   }
-  .Container__contacto {
-    .form__container {
-      .form__titulo {
+  .contacto {
+    .form {
+      &__titulo {
         font-size: 3.5rem;
       }
-      .form__container {
+      &__container {
         .contenido__ubicacion {
           width: 50%;
         }
@@ -215,7 +215,7 @@
   }
   footer {
     .footer__container {
-      .icono__redes {
+      &--redes {
         padding-left: 2rem;
       }
     }
@@ -230,7 +230,7 @@
           width: 20%;
         }
       }
-      .nav{
+      .nav {
         &__list {
           &--items {
             margin: 0 1.5rem;
@@ -240,47 +240,45 @@
           }
         }
       }
-
     }
   }
-  .main__index {
-    .service__container--index {
-      .service__card--index {
+  .home__container {
+    .home {
+      &__card {
         max-width: 30%;
         flex: 1 1 5%;
-        .service__card--imgIndex {
+        &--img {
           width: 230px;
           height: 230px;
         }
       }
     }
   }
-  .nosotros__container {
-    .nosotros__somos {
-      margin: 0 2rem;
-      .nosotros__container--somos {
-        .nosotros__descripcion--somos {
+  .nosotros {
+    .somos {
+      &__container--info {
+        &-descripcion {
           font-size: 1.2rem;
           line-height: 2;
         }
       }
-      .nosotros__conatiner--video {
-        width: 40%;
-        .nosotros__video--somos {
-          height: 350px;
+      &__container--video {
+        &-iframe {
+          width: 130%;
+          height: 300px;
         }
       }
     }
   }
-  .galeria__container {
+  .galeria {
     font-size: 1.5rem;
-    .galeria__box {
-      .galeria__img {
+    &__box {
+      &--img {
         flex: 1 1 20%;
       }
     }
   }
-  .Container__contacto {
+  .contacto {
     padding: 2rem 5rem;
   }
 }

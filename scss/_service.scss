@@ -1,17 +1,17 @@
-.main__service {
+.service {
     text-align: center;
     padding: 0 0 5rem 0;
     background: map-get($fondos, degrade1);background: map-get($fondos, degrade1);
-    .service__titulo {
+    &__titulo {
       padding: 3% 0;
       font-weight: 600;
       font-size: 2.1rem;
       color: map-get($color-text , text-1);
       text-shadow: map-get($sombras, sombraBox-1);
     }
-    .service__container {
+    &__container {
       text-align: center;
-      .service__card {
+      &--card {
         @include flex-col-center;
         margin: 2rem;
         padding-top: 2rem;
@@ -20,13 +20,13 @@
         text-align: center;
         color: map-get($color-text , text-2);
         text-shadow: map-get($sombras, sombraText-2);
-        .service__card--img {
+        &-img {
           width: 230px;
           height: 230px;
           border-radius: 100%;
           border: map-get($bordes , borde-4);
         }
-        .service__card--info {
+        &-info {
           padding: 1.5rem 0;
           @include flex-col-center;
           .service__card--name {

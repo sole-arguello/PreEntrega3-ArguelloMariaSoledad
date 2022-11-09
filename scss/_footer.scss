@@ -1,20 +1,20 @@
 footer {
-    padding: 1rem 0;
-    text-align: center;
-    color: map-get($color-text, text-5);
-    background: map-get($fondos, fondo-3);
-    text-shadow: map-get($sombras, sombraText-2);
-    box-shadow: map-get($sombras, sombraBox-3);
-    .footer__container {
-        @include flex-content (center);
-      margin-bottom: 1rem;
-      .icono__redes {
-        padding-left: 1rem;
-        color: map-get($color-text, text-6);
-      }
-    }
-    .autor {
-      text-decoration: none;
+  padding: 1rem 0;
+  text-align: center;
+  color: map-get($color-text, text-5);
+  background: map-get($fondos, fondo-3);
+  text-shadow: map-get($sombras, sombraText-2);
+  box-shadow: map-get($sombras, sombraBox-3);
+  .footer__container {
+    @include flex-content(center);
+    margin-bottom: 1rem;
+    &--redes {
+      padding-left: 1rem;
       color: map-get($color-text, text-6);
     }
   }
+  .autor {
+    text-decoration: none;
+    color: map-get($color-text, text-6);
+  }
+}

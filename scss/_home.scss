@@ -20,10 +20,10 @@
         box-shadow: map-get($sombras, sombraBox-2);
       }
     }
-    .service__container--index {
+    .home {
       width: 100%;
       padding: 5rem 0;
-      .service__card--index {
+      &__card {
         @include flex-col-center;
         font-weight: 600;
         font-size: 1.8rem;
@@ -33,14 +33,14 @@
         color: map-get($color-text, text-8);
         text-shadow: map-get($sombras, sombraText-1);
         /*box-shadow: map-get($sombras, sombraBox-4);*/
-        .service__card--imgIndex {
+        &--img {
           width: 230px;
           height: 230px;
           margin: 0 0 1rem 0;
           border-radius: 100%;
           border: map-get($bordes , borde-3);
         }
-        .service__card--lineIndex {
+        &--line {
           width: 20%;
           border: 1px solid;
           border-radius: 100%;

@@ -1,4 +1,4 @@
-.Container__contacto {
+.contacto {
   padding: 2rem 0;
   color: map-get($color-text, text-1);
   text-shadow: map-get($sombras, sombraText-2);
@@ -7,35 +7,35 @@
   background-position-y: 20%;
   background-position-x: center;
   background-position: center 20%;
-  .form__container {
+  .form {
     @include flexDirection(column);
-    .form__titulo {
+    &__titulo {
       text-align: center;
       font-size: 2.5rem;
       margin-bottom: 2rem;
     }
-    .form__container {
-      .contenido__form {
+    &__container {
+      &--info{
         @include flex-col-center;
         padding: 2rem 0;
         margin: 0 1rem;
         border-radius: 5%;
         border: map-get($bordes, borde-6);
-        .form__label {
+        &-label {
           width: 75%;
         }
-        .form__imput {
+        &-imput {
           width: 75%;
           margin-bottom: 1rem;
         }
-        .form__text {
+        &-textarea {
           margin-top: 1rem;
           max-width: 75%;
           min-width: 75%;
           min-height: 150px;
           max-height: 200px;
         }
-        .form__btn {
+        &-btn {
           width: 30%;
           padding: 0.5rem 0;
           font-size: 1.2rem;
@@ -45,45 +45,45 @@
           margin-top: 1rem;
         }
       }
+      &--ubicacion {
+        padding: 2.5rem 1rem 01rem;
+        line-height: 3;
+        &-titulo {
+          margin-bottom: 2rem;
+          line-height: 1;
+          font-size: 2.5rem;
+          font-weight: 600;
+          text-align: center;
+        }
+        &-domicilio,
+        &-phone,
+        &-mail {
+          color: map-get($color-text, text-9);
+        }
+        .icono {
+          margin-right: 1rem;
+          font-size: 1.3rem;
+        }
+        .ubicacion__mapa {
+        }
+      }
     }
-    .contenido__ubicacion {
-      padding: 2.5rem 1rem 01rem;
-      line-height: 3;
-      .ubicacion__titulo {
-        margin-bottom: 2rem;
-        line-height: 1;
-        font-size: 2.5rem;
-        font-weight: 600;
-        text-align: center;
-      }
-      .ubicacion__domicilio,
-      .ubicacion__phone,
-      .ubicacion__mail,
-      .ubicacion__icono {
-        color: map-get($color-text, text-9);
-        margin-right: 1rem;
-      }
-      .ubicacion__icono {
-        font-size: 1.3rem;
-      }
-      .ubicacion__mapa {
-      }
-    }
+
   }
-  .preguntas__container {
+  .preguntas {
     border: map-get($bordes, borde-6);
     border-radius: 5%;
     padding: 1rem;
     margin: 0 1rem;
-    .preguntas__titulo {
+    &__titulo {
       font-size: 1.5rem;
       margin-bottom: 1rem;
     }
-    .pregunta {
+    &__pregunta {
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
     }
-    .respuesta {
+    &__respuesta {
       color: map-get($color-text, text-10);
       padding: 0 1rem;
       margin-bottom: 1rem;

@@ -488,7 +488,7 @@ footer .autor {
     padding: 1%;
   }
   header .container__logo--img {
-    width: 30%;
+    width: 20%;
   }
   header .container .nav__list--items {
     padding: 0.5rem 1rem;
@@ -541,9 +541,6 @@ footer .autor {
   }
 }
 @media (min-width: 1200px) {
-  header .container__logo--img {
-    width: 25%;
-  }
   header .container .nav__list--items {
     margin: 0 1.5rem;
   }

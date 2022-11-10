@@ -140,7 +140,7 @@
     .container {
       &__logo {
         &--img {
-          width: 30%;
+          width: 20%;
         }
       }
       .nav {
@@ -225,11 +225,6 @@
 @media (min-width: 1200px) {
   header {
     .container {
-      &__logo {
-        &--img {
-          width: 25%;
-        }
-      }
       .nav {
         &__list {
           &--items {

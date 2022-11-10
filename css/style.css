@@ -372,7 +372,7 @@ footer .autor {
     width: 50%;
   }
   header .container .nav__list--items {
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
     margin: 0 0.5rem;
   }
   header .container .nav__list--items-li {

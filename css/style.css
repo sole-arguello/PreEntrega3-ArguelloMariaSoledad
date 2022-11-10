@@ -43,16 +43,16 @@ header .container .nav__list--items-li:hover {
   color: rgb(104, 87, 66);
 }
 
-.main__index {
+.home {
   background: linear-gradient(to bottom, rgb(241, 235, 236), rgb(238, 173, 178));
 }
-.main__index .portada {
+.home__portada {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.main__index .portada__titulo {
+.home__portada--titulo {
   top: 70%;
   width: 100%;
   font-size: 3rem;
@@ -63,16 +63,16 @@ header .container .nav__list--items-li:hover {
   color: rgb(97, 20, 45);
   text-shadow: 1px 1px 2px rgb(233, 225, 225);
 }
-.main__index .portada__img {
+.home__portada--img {
   width: 100%;
   height: 300px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5019607843);
 }
-.main__index .home {
+.home__container {
   width: 100%;
   padding: 5rem 0;
 }
-.main__index .home__card {
+.home__container--card {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -85,14 +85,14 @@ header .container .nav__list--items-li:hover {
   text-shadow: 1px 1px 2px rgb(58, 56, 56);
   /*box-shadow: map-get($sombras, sombraBox-4);*/
 }
-.main__index .home__card--img {
+.home__container--card-img {
   width: 230px;
   height: 230px;
   margin: 0 0 1rem 0;
   border-radius: 100%;
   border: 10px solid rgb(209, 136, 148);
 }
-.main__index .home__card--line {
+.home__container--card-line {
   width: 20%;
   border: 1px solid;
   border-radius: 100%;
@@ -289,8 +289,8 @@ footer .autor {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 0;
   margin: 0 1rem;
+  padding: 2rem 0;
   border-radius: 5%;
   border: 1px solid rgb(97, 20, 45);
 }
@@ -309,27 +309,30 @@ footer .autor {
   max-height: 200px;
 }
 .contacto .form__container--info-btn {
+  margin-top: 1rem;
   width: 30%;
-  padding: 0.5rem 0;
   font-size: 1.2rem;
+  padding: 0.5rem 0;
+  border-radius: 5%;
   color: rgb(97, 20, 45);
   border: 1px solid rgb(97, 20, 45);
-  border-radius: 5%;
-  margin-top: 1rem;
 }
 .contacto .form__container--ubicacion {
   padding: 2.5rem 1rem 1rem;
   line-height: 3;
 }
 .contacto .form__container--ubicacion-titulo {
-  margin-bottom: 2rem;
   line-height: 1;
-  font-size: 2.5rem;
   font-weight: 600;
+  font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 .contacto .form__container--ubicacion-domicilio, .contacto .form__container--ubicacion-phone, .contacto .form__container--ubicacion-mail {
   color: black;
+}
+.contacto .form__container--ubicacion-mapa {
+  margin-top: 2rem;
 }
 .contacto .form__container--ubicacion .icono {
   margin-right: 1rem;
@@ -337,9 +340,9 @@ footer .autor {
 }
 .contacto .preguntas {
   border: 1px solid rgb(97, 20, 45);
-  border-radius: 5%;
-  padding: 1rem;
   margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 2%;
 }
 .contacto .preguntas__titulo {
   font-size: 1.5rem;
@@ -376,18 +379,18 @@ footer .autor {
     font-size: 1.2rem;
     font-weight: 600;
   }
-  .home__container .portada .portada__titulo {
+  .home__portada--titulo {
     font-size: 5rem;
   }
-  .home__container .home {
+  .home__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
-  .home__container .home__card {
+  .home__container--card {
     margin: 1rem 0.5rem;
   }
-  .home__container .home__card--img {
+  .home__container--card-img {
     width: 200px;
     height: 200px;
   }
@@ -493,14 +496,14 @@ footer .autor {
   header .container .nav__list--items-li {
     font-size: 1.5rem;
   }
-  .home__container .portada .portada__img {
+  .home__portada-img {
     height: 600px;
   }
-  .home__container .home__card {
+  .home__container--card {
     max-width: 30%;
     flex: 1 1 30%;
   }
-  .home__container .home__card--img {
+  .home__container--card-img {
     width: 200px;
     height: 200px;
   }
@@ -530,7 +533,7 @@ footer .autor {
   .contacto .form__titulo {
     font-size: 3.5rem;
   }
-  .contacto .form__container .contenido__ubicacion {
+  .contacto .form__container--ubicacion {
     width: 50%;
   }
   footer .footer__container--redes {
@@ -547,11 +550,14 @@ footer .autor {
   header .container .nav__list--items-li {
     font-size: 1.5rem;
   }
-  .home__container .home__card {
+  .home__portada--img {
+    height: 550px;
+  }
+  .home__container--card {
     max-width: 30%;
     flex: 1 1 5%;
   }
-  .home__container .home__card--img {
+  .home__container--card-img {
     width: 230px;
     height: 230px;
   }

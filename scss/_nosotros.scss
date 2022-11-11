@@ -16,6 +16,8 @@
         width: 100%;
         margin: 2rem;
         padding: 15% 2% 10% 2%;
+        /*--- animacion ----*/
+        animation: from-right 2s ease;
         background: map-get($bordes, borde-5);
         box-shadow: map-get($sombras, sombraBox-4);
         &--img {
@@ -32,7 +34,6 @@
       }
     }
   }
-  /*seccion nosotros somos*/
   .somos {
     padding: 2% 10%;
     margin-bottom: 10%;
@@ -60,3 +61,5 @@
     }
   }
 }
+
+

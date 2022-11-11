@@ -1,11 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,400;1,100;1,300&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Sans+Vai&family=Raleway:wght@400;500;600;700&display=swap");
 /* Monsetrrat - Grandstander - Noto Sans Vai - Raleway */
+@keyframes from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 * {
   /*outline: 1px solid green;*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Monserrat";
 }
 
 header {
@@ -59,7 +68,6 @@ header .container .nav__list--items-li:hover {
   position: absolute;
   text-align: center;
   font-style: oblique;
-  font-family: "Monserrat";
   color: rgb(97, 20, 45);
   text-shadow: 1px 1px 2px rgb(233, 225, 225);
 }
@@ -126,7 +134,6 @@ footer .autor {
   text-align: center;
   padding: 0 0 5rem 0;
   background: linear-gradient(to bottom, rgb(241, 235, 236), rgb(238, 173, 178));
-  background: linear-gradient(to bottom, rgb(241, 235, 236), rgb(238, 173, 178));
 }
 .service__titulo {
   padding: 3% 0;
@@ -189,7 +196,6 @@ footer .autor {
   padding: 2rem 0;
   text-align: center;
   background: linear-gradient(to bottom, rgb(236, 226, 228), rgb(238, 173, 178));
-  /*seccion nosotros somos*/
 }
 .nosotros .team {
   padding: 2% 10%;
@@ -209,6 +215,8 @@ footer .autor {
   width: 100%;
   margin: 2rem;
   padding: 15% 2% 10% 2%;
+  /*--- animacion ----*/
+  animation: from-right 2s ease;
   background: 1px solid rgb(223, 211, 211);
   box-shadow: 10px 10px 10px -5px rgb(179, 179, 179);
 }
@@ -412,9 +420,6 @@ footer .autor {
   }
   .service__container--card-info .service__card--name {
     font-size: 2rem;
-  }
-  .nosotros {
-    /*seccion nosotros somos*/
   }
   .nosotros .team {
     display: flex;

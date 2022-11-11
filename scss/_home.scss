@@ -10,7 +10,7 @@
         position: absolute;
         text-align: center;
         font-style: oblique;
-        font-family: $font-1;
+        font-family: map-get($tipografia , fondo-1);
         color: map-get($color-text, text-1);
         text-shadow: map-get($sombras, sombraText-3);
       }

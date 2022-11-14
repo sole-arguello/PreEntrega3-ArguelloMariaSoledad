@@ -1,25 +1,26 @@
 @media (min-width: 768px) {
   header {
     .container {
-      @include flexDirectionJustify(row, space-between);
-      &__logo {
-        width: 100%;
-        text-align: left;
-        padding-left: 1rem;
-        &--img {
-          width: 50%;
-        }
-      }
       .nav {
+        #icon,
+        #check {
+          display: none;
+        }
         &__list {
+          top: 2.5%;
+          padding-right: 1rem;
+          background: none;
+          @include flex-content(right);
           &--items {
             padding: 0 1rem;
-            margin: 0 0.5rem;
             &-li {
-              font-size: 1.2rem;
-              font-weight: 600;
+             color: map-get($color-text, text-4);
             }
           }
+        }
+        #check:checked ~ ul {
+          /*animation: from-right 2s ease;*/
+          transition: none;
         }
       }
     }
@@ -135,20 +136,12 @@
 
 @media (min-width: 1024px) {
   header {
-    padding: 1%;
     .container {
-      &__logo {
-        &--img {
-          width: 20%;
-        }
-      }
       .nav {
-        &__list {
-          &--items {
-            padding: 0.5rem 1rem;
-
-            &-li {
-              font-size: 1.8rem;
+        .nav__list {
+          .nav__list--items {
+            .nav__list--items-li {
+              font-size: 1.5rem;
             }
           }
         }
@@ -223,13 +216,15 @@
 
 @media (min-width: 1200px) {
   header {
+    padding:  1% 1.5%;
     .container {
       .nav {
-        &__list {
-          &--items {
-            margin: 0 1.5rem;
-            &-li {
-              font-size: 1.5rem;
+        .nav__list {
+          top: 3%;
+          .nav__list--items {
+            padding: 0 1.5rem;
+            .nav__list--items-li {
+              font-size: 1.7rem;
             }
           }
         }
@@ -237,8 +232,8 @@
     }
   }
   .home {
-    &__portada{
-      &--img{
+    &__portada {
+      &--img {
         height: 550px;
       }
     }

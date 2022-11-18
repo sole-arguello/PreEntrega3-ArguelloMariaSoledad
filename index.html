@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -38,21 +38,24 @@
   <body>
     <header>
       <div class="container">
-        <a class="container__logo" href="index.html">
-          <img
-            class="container__logo--img"
-            src="./assets/logo-lu.jpeg"
-            alt="logo"
-          />
-        </a>
-
-        <nav class="nav">
-          <!----  menu hamburguesa ------>
-          <input type="checkbox" id="check">
-          <label class="check__btn" for="check">
-            <i class="menu__icon fa-solid fa-bars" id="icon"></i>
-          </label>
-          <!------------------------------->
+        <nav class="nav" id="nav-header">
+          <!------ hamburguesa ----->
+          <div class="nav__navBar">
+            <a class="nav__navBar--logo" href="index.html">
+              <img
+                class="nav__navBar--logo-img"
+                src="./assets/logo-lu.jpeg"
+                alt="logo"
+              />
+            </a>
+            <a class="nav__navBar--icon-btn open" href="#nav-header"
+              ><i class="icon fa-solid fa-bars" id="icon"></i
+            ></a>
+            <a class="nav__navBar--icon-btn close" href="#---------"
+              ><i class="icon fa-solid fa-x"></i
+            ></a>
+          </div>
+          <!----------------------->
           <ul class="nav__list">
             <li class="nav__list--items">
               <a class="nav__list--items-li" href="./index.html">Home</a>

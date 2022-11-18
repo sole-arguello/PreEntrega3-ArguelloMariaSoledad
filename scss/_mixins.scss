@@ -23,10 +23,15 @@
   flex-direction: $direction;
   justify-content: $justify;
 }
-@mixin flex-alingItems-justify {
+@mixin alingItems-direction-justify($aling, $direction, $justify) {
+  align-items: $aling;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+@mixin flex-alingItems-justify($alignItems, $justify) {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: $alignItems;/*center*/
+  justify-content: $justify;/*center*/
 }
 @mixin flex-center($wrap-nowrap) {
   display: flex;

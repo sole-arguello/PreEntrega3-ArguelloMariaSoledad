@@ -18,8 +18,8 @@
         font-size: 1rem;
         font-weight: 600;
         text-align: center;
-        color: map-get($color-text , text-2);
-        text-shadow: map-get($sombras, sombraText-2);
+        color: map-get($color-text , text-1);
+        text-shadow: map-get($sombras, sombraText-3);
         &-img {
           width: 230px;
           height: 230px;
@@ -27,6 +27,7 @@
           border: map-get($bordes , borde-4);
         }
         &-info {
+          
           padding: 1.5rem 0;
           @include flex-col-center;
           .service__card--name {
@@ -40,8 +41,13 @@
             color: map-get($color-text, text-8);
           }
           .service__card--description {
-            padding: 0 0.5rem;
+            padding: 0 0.8rem;
             text-align: left;
+              font-size: 1.2rem;
+              text-shadow: none;
+              font-weight: 100;
+              line-height: 2rem;
+              color: map-get($color-text, text-10);
           }
         }
       }

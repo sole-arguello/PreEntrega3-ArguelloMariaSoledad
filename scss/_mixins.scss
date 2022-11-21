@@ -30,8 +30,8 @@
 }
 @mixin flex-alingItems-justify($alignItems, $justify) {
   display: flex;
-  align-items: $alignItems;/*center*/
-  justify-content: $justify;/*center*/
+  align-items: $alignItems;
+  justify-content: $justify;
 }
 @mixin flex-center($wrap-nowrap) {
   display: flex;

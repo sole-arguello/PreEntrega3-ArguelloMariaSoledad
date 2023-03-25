@@ -6,8 +6,8 @@
     10. @Media+Pseudoclases
     11. SASS
     12. Servidores y SEO para tu sitio
-    8. GIT y GITHUB
-    9. Frameworks CSS+Bootstrap
+    13. GIT y GITHUB
+    14. Frameworks CSS+Bootstrap
     
 ## Formato:
        
